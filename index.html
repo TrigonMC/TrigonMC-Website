@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>TrigonMC | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background-color: #5E4485;
+            color: #fff;
+            padding: 1% 0;
+            font-size: 1.2em;
+            border: 0;
+        }
+
+        .navbar-brand {
+            float: left;
+            min-height: 55px;
+            padding: 0 15px 5px;
+        }
+
+        .navbar-inverse .navbar-nav .active a,
+        .navbar-inverse .navbar-nav .active a:focus,
+        .navbar-inverse .navbar-nav .active a:hover {
+            color: #b21acd;
+            background-color: #5E4485;
+        }
+
+        .navbar-inverse .navbar-bar li a {
+            color: #FFF;
+        }
+        
+        .carousel-caption {
+            top: 80%;
+            transform: translateY(-80%);
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://trigonmc.com"><img src="assets/logo_transparent.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#"><i class="fas fa-home"> Home</i></a></li>
+                    <li><a href="#"><i class="fas fa-edit"> Forums</i></a></li>
+                    <li><a href="#"><i class="fas fa-gavel"> Punishments</i></a></li>
+                    <li><a href="#"><i class="far fa-clipboard"> Apply</i></a></li>
+                    <li><a href="#"><i class="fas fa-video"> Videos</i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"> Store</i></a></li>
+                    <li><a href="#"><i class="fas fa-pencil-alt"> Signup</i></a></li>
+                    <li><a href="#"><i class="fas fa-sign-in-alt"> Login</i></a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel-slider" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="assets/builds/0.png">
+                <div class="carousel-caption">
+                    <h4>Build Title: "Title"</h4>
+                    <h4>Builder: {Player}</h4>
+                </div>
+            </div> <!--- End active -->
+            <div class="item">
+                <img src="assets/builds/1.png">
+            </div>
+            <div class="item">
+                <img src="assets/builds/2.png">
+            </div>
+            <div class="item">
+                <img src="assets/builds/3.png">
+            </div>
+            <div class="item">
+                <img src="assets/builds/4.png">
+            </div>
+            <div class="item">
+                <img src="assets/builds/5.png">
+            </div>
+            <div class="item">
+                <img src="assets/builds/6.png">
+            </div>
+            
+        </div>
+        <!--- Start of slider controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="fas fa-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous Image</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="fas fa-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next Image</span>
+        </a>
+    </div>
+    <!--- End Slider -->
+
+</body>
+
+</html>
