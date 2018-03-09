@@ -1,126 +1,97 @@
-4<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>TrigonMC | Home</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-            background-color: #464646;
-            color: #fff;
-            padding: 1% 0;
-            font-size: 1.2em;
-            border: 0;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mykyta TechToobox Komarnytskyy">
+    <link rel="icon" href="../img/favicon.ico">
 
-        .navbar-brand {
-            float: left;
-            min-height: 55px;
-            padding: 0 15px 5px;
-        }
+    <title>Survival Minecraft | Trigon MC</title>
 
-        .navbar-inverse .navbar-nav .active a,
-        .navbar-inverse .navbar-nav .active a:focus,
-        .navbar-inverse .navbar-nav .active a:hover {
-            color: #b21acd;
-            background-color: #464646;
-        }
-
-        .navbar-inverse .navbar-bar li a {
-            color: #FFF;
-        }
-        
-        .carousel-caption {
-            top: 80%;
-            transform: translateY(-80%);
-        }
-
-    </style>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Import Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
+
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="https://trigonmc.com"><img src="assets/logo_transparent.png"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#"><i class="fas fa-home"> Home</i></a></li>
-                    <li><a href="#"><i class="fas fa-edit"> Forums</i></a></li>
-                    <li><a href="#"><i class="fas fa-gavel"> Punishments</i></a></li>
-                    <li><a href="#"><i class="far fa-clipboard"> Apply</i></a></li>
-                    <li><a href="#"><i class="fas fa-video"> Videos</i></a></li>
-                    <li><a href="#"><i class="fas fa-shopping-bag"> Store</i></a></li>
-                    <li><a href="#"><i class="fas fa-pencil-alt"> Signup</i></a></li>
-                    <li><a href="#"><i class="fas fa-sign-in-alt"> Login</i></a></li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" </div>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+
+        <a class="navbar-brand" href="#">
+            <img src="/img/logo.png" width="30" height="30" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://trigonmc.com/forums">Forums <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Store <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Videos <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Punishments <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Apply <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <button type="button" class="btn loginbtn" data-toggle="modal" data-target="#exampleModal">Login</button>
+        </div>
     </nav>
 
-    <div id="myCarousel" class="carousel-slider" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-            <li data-target="#myCarousel" data-slide-to="5"></li>
-            <li data-target="#myCarousel" data-slide-to="6"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="assets/builds/0.png">
-                <div class="carousel-caption">
-                    <h4>Build Title: "Title"</h4>
-                    <h4>Builder: {Player}</h4>
-                </div>
-            </div> <!--- End active -->
-            <div class="item">
-                <img src="assets/builds/1.png">
-            </div>
-            <div class="item">
-                <img src="assets/builds/2.png">
-            </div>
-            <div class="item">
-                <img src="assets/builds/3.png">
-            </div>
-            <div class="item">
-                <img src="assets/builds/4.png">
-            </div>
-            <div class="item">
-                <img src="assets/builds/5.png">
-            </div>
-            <div class="item">
-                <img src="assets/builds/6.png">
-            </div>
-            
+    <!-- Login shitmodaltoaster.exe -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login to TrigonMC</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
         </div>
-        <!--- Start of slider controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="fas fa-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous Image</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="fas fa-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next Image</span>
-        </a>
+      </div>
     </div>
-    <!--- End Slider -->
+    
+    <div class="container-fluid">
+        <div class='row hero'>
+            <div class="col-12">
+                <h1 class='hero-title'>Trigon MC Survival</h1>
+                <h1 class="hero-versions">We support 1.11-1.12.2</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fazkFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </body>
-
+    <footer>
+        <p>Created with 💖 by Mykyta "TechToolbox" Komarnytskyy </p>
+            <p>Copyright &copy; TrigonMC Group - 2018</p>    
+    </footer>
 </html>
